@@ -48,16 +48,16 @@ def initPlot(PreproObsFile, PlotConf, Title, Label):
 
 # Plot Confg
 cfg = {
-    "SatVisibility"         : 0,
-    "NumSatellites"         : 0,
-    "PolarView"             : 0,
+    "SatVisibility"         : 1,
+    "NumSatellites"         : 1,
+    "PolarView"             : 1,
     "RejFlags"              : 1,
-    "CodeRate"              : 0,
-    "CodeRateStep"          : 0,
-    "PhaseRate"             : 0,
-    "PhaseRateStep"         : 0,
-    "VTEC"                  : 0,
-    "AATR"                  : 0
+    "CodeRate"              : 1,
+    "CodeRateStep"          : 1,
+    "PhaseRate"             : 1,
+    "PhaseRateStep"         : 1,
+    "VTEC"                  : 1,
+    "AATR"                  : 1
 }
 
 # Plot Satellite Visibility

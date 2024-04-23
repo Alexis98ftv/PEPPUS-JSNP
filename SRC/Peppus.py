@@ -52,7 +52,7 @@ from Corrections import runCorrectMeas
 from CorrectionsPlots import generateCorrPlots
 from PerfPlots import generatePerfPlots, generateXpeHistPlots
 from Kpvt import computeKpvtSolution
-from PosPlots import generatePosPlots, generateDebugPlot #debug JMEA
+from PosPlots import generatePosPlots
 from Perf import initializePerfInfo, computeFinalPerf
 from COMMON.Dates import convertJulianDay2YearMonthDay
 from COMMON.Dates import convertYearMonthDay2Doy

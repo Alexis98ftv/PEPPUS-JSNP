@@ -76,8 +76,8 @@ cfg = {
     "HDOPMAX"      : 1,
     "VDOPMAX"      : 1,
     # HIST
-    "HPE-HIST"     : 0,
-    "VPE-HIST"     : 0
+    "HPE-HIST"     : 1,
+    "VPE-HIST"     : 1
 }
 
 def plotCONVT():

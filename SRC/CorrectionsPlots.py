@@ -48,21 +48,21 @@ def initPlot(CorrFile, PlotConf, Title, Label):
 
 # Plot Confg
 cfg = {
-    "SatTrack"          : 0,
-    "FlightTime"        : 0,
-    "Dtr"               : 0,
-    "STD"               : 0,
-    "STD_elev"          : 0,
-    "STropo_elev"       : 0,
-    "SMp_elev"          : 0,
-    "SNoiDiv"           : 0,
-    "SAirb"             : 0,
-    "SUERE"             : 0,
-    "UERE_statistics"   : 0,
-    "RCVR"              : 0,
-    "C-RES"             : 0,
-    "PH-RES"            : 0,
-    "PH-RES_zoom"       : 0
+    "SatTrack"          : 1,
+    "FlightTime"        : 1,
+    "Dtr"               : 1,
+    "STD"               : 1,
+    "STD_elev"          : 1,
+    "STropo_elev"       : 1,
+    "SMp_elev"          : 1,
+    "SNoiDiv"           : 1,
+    "SAirb"             : 1,
+    "SUERE"             : 1,
+    "UERE_statistics"   : 1,
+    "RCVR"              : 1,
+    "C-RES"             : 1,
+    "PH-RES"            : 1,
+    "PH-RES_zoom"       : 1
 }
 
 def plotSatMonitoringTrack(CorrFile, CorrData):

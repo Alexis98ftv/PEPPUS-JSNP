@@ -48,12 +48,12 @@ def initPlot(PosFile, PlotConf, Title, Label):
 
 # Plot Confg
 cfg = {
-    "EstCLK"        : 0,
-    "HPE-VPE"       : 0,
-    "DOP"           : 0,
-    "HPE"           : 0,
-    "AMB"           : 0,
-    "AMB-Zoom"      : 0
+    "EstCLK"        : 1,
+    "HPE-VPE"       : 1,
+    "DOP"           : 1,
+    "HPE"           : 1,
+    "AMB"           : 1,
+    "AMB-Zoom"      : 1
 }
 
 def plotEstimatedClock(PosFile, PosData):

@@ -238,6 +238,22 @@ def generateLinesPlot(PlotConf):
                 marker = PlotConf["Marker"],
                 s = LineWidth,
                 c = cmap(normalize(np.array(PlotConf["zData"][Label]))))
+        
+        elif "BarPlot" in PlotConf:
+            ax.bar(PlotConf["xData"][Label], PlotConf["yData"][Label],
+            color = ColorData,
+            width=PlotConf["WidthBar"],
+            label = Label)
+        else:
+            ax.plot(PlotConf["xData"][Label], PlotConf["yData"][Label],
+            PlotConf["Marker"],
+            color = ColorData,
+            label = Label,
+            markersize = LineWidth)
+            #LEGEND
+            legendcurve , legendlabel = ax.get_legend_handles_labels()
+            LegendCurve = legendcurve
+            LegendLabel = legendlabel
 
         if "RejFlagAnnotate" in PlotConf:
             for i in range (len(PlotConf["zData"][Label])):
@@ -279,22 +295,9 @@ def generateLinesPlot(PlotConf):
                                 ,bbox = dict(boxstyle = "round", pad=0.01, fc="w", ec="w")
                                 )
         
-        elif "BarPlot" in PlotConf:
-            ax.bar(PlotConf["xData"][Label], PlotConf["yData"][Label],
-            color = ColorData,
-            width=PlotConf["WidthBar"],
-            label = Label)
+        
 
-        else:
-            ax.plot(PlotConf["xData"][Label], PlotConf["yData"][Label],
-            PlotConf["Marker"],
-            color = ColorData,
-            label = Label,
-            markersize = LineWidth)
-            #LEGEND
-            legendcurve , legendlabel = ax.get_legend_handles_labels()
-            LegendCurve = legendcurve
-            LegendLabel = legendlabel
+        
     
 
     #TwinAx
